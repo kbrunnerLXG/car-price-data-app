@@ -270,7 +270,10 @@ def figure_gen(filtered_df):
             withBorder=True,
             shadow="sm",
             radius="sm",
-            p = "sm")
+            p = "sm"),
+        dmc.Card(children=[
+            dcc.Graph(figure=px.bar())
+        ])
 
     ]
 

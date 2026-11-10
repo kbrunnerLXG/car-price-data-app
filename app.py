@@ -1,9 +1,10 @@
 import dash
-from dash import Dash, html, Output, Input, State, ALL, callback_context
+from dash import Dash, Output, Input, State, ALL, callback_context
 import dash_mantine_components as dmc
 
 
 app = Dash(__name__, use_pages=True)
+server = app.server
 
 
 app.layout = dmc.MantineProvider(
@@ -85,4 +86,4 @@ def update_navlinks(pathname):
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, host="0.0.0.0", port=8080, use_reloader=False)
