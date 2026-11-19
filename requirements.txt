@@ -17,7 +17,7 @@ narwhals==2.28.0
 nest-asyncio==1.6.0
 numpy==2.2.6
 packaging==26.3
-pandas==2.3.3
+pandas==2.3.2
 plotly==7.1.0
 pydantic==2.14.3
 pydantic_core==2.50.4
